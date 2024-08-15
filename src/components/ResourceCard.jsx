@@ -6,9 +6,15 @@ export default function ResourceCard({ resource }) {
       <div className='content'>
         <div className='header'>{resource.name}</div>
         <div>{resource.description}</div>
-        <a>{resource.link}</a>
+        <a href={resource.link} target='_blank'>
+          {resource.link}
+        </a>
         <i
-          style={{ color: "red", marginTop: "7px" }}
+          style={{
+            color: "red",
+            marginTop: "7px",
+            cursor: "pointer",
+          }}
           className='trash alternate outline icon'
         ></i>
       </div>
