@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "./Header";
-import AddContact from "./Resource";
-import ContactCard from "./ResourceCard";
-import ContactList from "./ResourceList";
+import Resource from "./Resource";
+import ResourceList from "./ResourceList";
 
 function App() {
   return (
     <>
-      <Header />
-      {/* <AddContact />
-      <ContactCard />
-      <ContactList /> */}
+      <div className='ui container'>
+        <Header />
+        <Resource />
+        <ResourceList />
+      </div>
     </>
   );
 }
