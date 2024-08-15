@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <AddContact />
+      {/* <AddContact />
       <ContactCard />
-      <ContactList />
+      <ContactList /> */}
     </>
   );
 }
