@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 export default function Resource({
   name,
@@ -21,11 +21,16 @@ export default function Resource({
   };
   const addResource = (e) => {
     e.preventDefault();
+    if (name === "" || description === "" || link === "") {
+      alert(`(Enter '-' for empty fields)`);
+      return;
+    }
     setResources([...resources, { name, description, link }]);
     setName("");
     setDescription("");
     setLink("");
   };
+
   return (
     <div className='ui main'>
       <h2>Add Contact</h2>
